@@ -34,10 +34,16 @@
                 switch(@$_REQUEST["page"]){
                     case "novo":
                         include("novo-usuario.php");
-                    break;
+                        break;
                     case "listar":
                         include("listar-usuario.php");
-                    break;
+                        break;
+                    case "salvar":
+                        include("salvar-usuario.php");
+                        break;
+                    case"editar":
+                        include("editar-usuario.php");
+                        break;
                     default:
                         print "<h1>Bem Vindos!</h1>";
                 }
